@@ -30,7 +30,9 @@ export default defineConfig({
         assetFileNames: 'assets/[name]-[hash][extname]',
       },
     },
-    sourcemap: true,
+    sourcemap: false,
+    manifest: true,
+    minify: 'terser',
   },
   optimizeDeps: {
     include: ['react', 'react-dom'],
